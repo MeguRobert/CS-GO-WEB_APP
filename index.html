@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script src="user_age.js" defer></script>
+  <script src="maps.js" defer></script>
+  <script src="teamGender.js" defer></script>
+  <title>Document</title>
+</head>
+<body >
+
+  <div class="background-image">
+
+    <div id="clockposition">
+        <p id="clock"></p>
+    </div> 
+    <div class="my_container2">
+
+      <form class="chenare" id="chenar1">
+        
+        <!-- Nickname -->
+        <div class="label_pic">
+          <img class="grenada" src="../Resurse/molotov.png">
+          <label class="label">Nickname:</label>
+        </div>
+
+        <input class="inputuri_design" type="text" id="user_name" placeholder="Insert your nickname" >
+
+        <!-- Birthdate -->
+        <div class="label_pic">
+          <img class="grenada" src="../Resurse/molotov.png">
+          <label class="label">Select your birthdate:</label>
+        </div>
+
+        <input class="inputuri_design" type="date" id="user_date_of_birth" >
+
+        <!-- Team selection - Radio -->
+        <div class="label_pic">
+          <img class="grenada" src="../Resurse/molotov.png">
+          <label class="label">Chose your team:</label>
+        </div>
+
+        <input type="radio" id="antiterro" name="teams" value="antiterro">
+        <label for="antiterro">Counter-Terrorist</label><br>
+        <input type="radio" id="terro" name="teams" value="terro">
+        <label for="terro">Terrorist</label>
+        <br><br>
+
+        <!-- Gender selector -->
+        <div class="label_pic">
+          <img class="grenada" src="../Resurse/molotov.png">
+          <label class="label">Select character`s gender:</label><br>
+        </div>
+        
+        <select name="gender" class="inputuri_design" 
+                id="select_gender" onchange="noFemaleTerro()">
+            <option id="male" value="male">Male</option>
+            <option id="female" value="female">Female</option>
+        </select><br><br>
+
+        <!-- Map selection -->
+        <div class="label_pic">
+          <img class="grenada" src="../Resurse/molotov.png">
+          <label class="label">Select your favorite maps:</label><br>
+        </div>
+        
+        <input type="checkbox" id="map1" name="map" value="Cobblestone">
+        <label for="map1">Cobblestone</label><br>
+        <input type="checkbox" id="map2" name="map" value="Inferno">
+        <label for="map2">Inferno</label><br>
+        <input type="checkbox" id="map3" name="map" value="Mirage">
+        <label for="map3">Mirage</label><br>
+        <input type="checkbox" id="map4" name="map" value="Nuke">
+        <label for="map4">Nuke</label><br>
+        <input type="checkbox" id="map5" name="map" value="Train">
+        <label for="map5">Train</label><br>
+        <input type="checkbox" id="allmap" name="map" value="map_all">
+        <label for="allmap">All Maps</label><br><br>
+        <button onclick="this.disabled=false, GenerateCharacter()" type="submit" id="button_submit"><b>Generate character</b></button>
+      </form>
+
+      <!-- Right panel -->
+      <div class="chenare" id="chenar2">
+        <div id="getmaps"></div>
+        <h2 id ="output"></h2>
+        <h2 id ="output2"></h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
