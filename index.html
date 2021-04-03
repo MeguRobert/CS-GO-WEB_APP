@@ -8,7 +8,7 @@
   <script src="app.js" defer></script>
   <script src="user_age.js" defer></script>
   <script src="maps.js" defer></script>
-  <script src="teamGender.js" defer></script>
+  <script src="genderSelector.js" defer></script>
   <title>Document</title>
 </head>
 <body >
@@ -44,9 +44,9 @@
           <label class="label">Chose your team:</label>
         </div>
 
-        <input type="radio" id="antiterro" name="teams" value="antiterro">
+        <input type="radio" name="teams" value="antiterro" onchange="TeamGender()">
         <label for="antiterro">Counter-Terrorist</label><br>
-        <input type="radio" id="terro" name="teams" value="terro">
+        <input type="radio" name="teams" value="terro" onchange="TeamGender()">
         <label for="terro">Terrorist</label>
         <br><br>
 
@@ -57,7 +57,7 @@
         </div>
         
         <select name="gender" class="inputuri_design" 
-                id="select_gender" onchange="noFemaleTerro()">
+                id="select_gender" >
             <option id="male" value="male">Male</option>
             <option id="female" value="female">Female</option>
         </select><br><br>
@@ -80,7 +80,7 @@
         <label for="map5">Train</label><br>
         <input type="checkbox" id="allmap" name="map" value="map_all">
         <label for="allmap">All Maps</label><br><br>
-        <button onclick="this.disabled=false, GenerateCharacter()" type="submit" id="button_submit"><b>Generate character</b></button>
+        <button onclick="TeamGender()" type="submit" id="button_submit"><b>Generate character</b></button>
       </form>
 
       <!-- Right panel -->
