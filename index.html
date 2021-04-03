@@ -13,11 +13,11 @@
 </head>
 <body >
   <div class="background-image">
-
     <div id="clockposition">
         <p id="clock"></p>
     </div> 
     <div class="my_container2">
+
       <form class="chenare" id="chenar1">
         
         <!-- Nickname -->
@@ -25,7 +25,6 @@
           <img class="grenada" src="../Resurse/molotov.png">
           <label class="label">Nickname:</label>
         </div>
-
         <input class="inputuri_design" type="text" id="user_name" placeholder="Insert your nickname" >
 
         <!-- Birthdate -->
@@ -35,32 +34,6 @@
         </div>
 
         <input class="inputuri_design" type="date" id="user_date_of_birth" >
-
-
-        <!-- Team selection - Radio -->
-        <div class="label_pic">
-          <img class="grenada" src="../Resurse/molotov.png">
-          <label class="label">Chose your team:</label>
-        </div>
-
-        <input type="radio" name="teams" value="antiterro" onchange="Gender()">
-        <label for="antiterro">Counter-Terrorist</label><br>
-        <input type="radio" name="teams" value="terro" onchange="Gender()">
-        <label for="terro">Terrorist</label>
-        <br><br>
-
-        <!-- Gender selector -->
-        <div class="label_pic">
-          <img class="grenada" src="../Resurse/molotov.png">
-          <label class="label">Select character`s gender:</label><br>
-        </div>
-        
-        <select name="gender" class="inputuri_design" 
-                id="select_gender" >
-            <option id="male" value="male">Male</option>
-            <option id="female" value="female">Female</option>
-        </select><br><br>
-
         <!-- Map selection -->
         <div class="label_pic">
           <img class="grenada" src="../Resurse/molotov.png">
@@ -79,42 +52,38 @@
         <label for="map5">Train</label><br>
         <input type="checkbox" id="allmap" name="map" value="map_all">
         <label for="allmap">All Maps</label><br><br>
-
-
-
+        
         <!-- Team selection - Radio -->
         <div class="label_pic">
           <img class="grenada" src="../Resurse/molotov.png">
           <label class="label">Chose your team:</label>
         </div>
-
-        <input type="radio" id="antiterro" name="team" value="antiterro" onclick="noFemaleCT()">
+        
+        <input type="radio" name="teams" value="antiterro" onchange="Gender()">
         <label for="antiterro">Counter-Terrorist</label><br>
-        <input type="radio" id="terro" name="team" value="terro" onclick="noFemaleCT()">
+        <input type="radio" name="teams" value="terro" onchange="Gender()">
         <label for="terro">Terrorist</label>
         <br><br>
-
+        
         <!-- Gender selector -->
         <div class="label_pic">
           <img class="grenada" src="../Resurse/molotov.png">
           <label class="label">Select character`s gender:</label><br>
         </div>
         
-        <select name="gender" class="inputuri_design" id="select_gender" >
+        <select name="gender" class="inputuri_design" 
+                id="select_gender" >
             <option id="male" value="male">Male</option>
-            <option id="female" value="female" >Female</option>
-        </select>
-        <br><br>
-
+            <option id="female" value="female">Female</option>
+        </select><br><br>
         <!--onclick="this.disabled=true, GenerateCharacter()"-->
-
         <button onclick="GenerateCharacter()" type="submit" id="button_submit"><b>Generate character</b></button>
       </form>
 
       <!-- Right panel -->
       <div class="chenare" id="chenar2">
         <div id="getmaps"></div>
-
+        
         <div id="about_character">
           <div id="info_character">
             <h2 id ="output"></h2>
@@ -123,11 +92,11 @@
           </div>
           
           <div id="character_image">
-              <!-- aici vine poza characterului -->
+            <!-- aici vine poza characterului -->
           </div>
         </div>
-
-
+        
+        
       </div>
       
     </div>
