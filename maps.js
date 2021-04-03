@@ -29,13 +29,7 @@ function CreateMap(mapName) {
   mymap.id = mapName;
   
   /// error: nu intra in if, doar in else... why?
-  if (divForMaps.contains(mymap)) {
-    console.log("error");
-  }
-  else
-  {
-    divForMaps.appendChild(mymap);
-  }
+  divForMaps.appendChild(mymap);
 }
 // mechanismul checkboxului All maps
 var allmap = document.getElementById('allmap');
