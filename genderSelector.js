@@ -12,3 +12,4 @@ function Gender()
             genderSelector.innerHTML = terroGender;
         }
 }
+

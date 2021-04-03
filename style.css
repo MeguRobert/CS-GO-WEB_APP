@@ -119,7 +119,6 @@ input[type=text],  input[type=date], select[type=radio]{
     padding: 3%;
 }
 #chenar1{
-    
     width:25%;
 }
 #chenar2{
@@ -136,7 +135,6 @@ input[type=text],  input[type=date], select[type=radio]{
 }
 #Cobblestone{
     background-image: url("../Resurse/cbblestone.jpg");
-    
 }
 #Inferno{
     background-image: url("../Resurse/inferno.jpg");
@@ -175,27 +173,42 @@ input[type=text],  input[type=date], select[type=radio]{
 }
 
 #about_character{
+    width: 75%;
     display:flex;
-    border: 1px red solid;
+    justify-content: space-between;
+    
 }
 
 /* Character's style */
 #antiterro_female{
-    background-image: url("../Resurse/antiterro_female.jpg");
+    background-image: url("../Resurse/antiterro_female.png");
 }
 #antiterro_male{
-    background-image: url("../Resurse/antiterro_male.jpg");
+    background-image: url("../Resurse/antiterro_male.png");
 }
 #terro_male{
-    background-image: url("../Resurse/terro_male.jpg");
+    background-image: url("../Resurse/terro_male.png");
 }
 
 .character{
-    width:20%;
-    height:25vh;
-    border: 1px rgb(255, 60, 0) solid;
+    width: 300px;
+    height:450px;
     padding: 5px;
-    box-shadow: 5px 10px darkorange;
-    background-size:cover;
+    margin:0px;
+    background-size:80%;
     background-repeat: no-repeat;
 }
+.flash{
+    animation: blinker 1s linear;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  #output{
+    padding-top:2.5rem;
+    font-size:2rem;
+  }

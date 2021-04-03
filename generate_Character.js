@@ -1,13 +1,29 @@
-let character = document.getElementById("character_image");
+var character = document.getElementById("character_image");
 
-function GenerateCharacter() {
-  // cream divul children
-  let user_character = document.createElement('div');
+function GenerateCharacter()
+{
+  let id;
+  let teams = document.getElementsByName('teams');
+  if (teams[0].checked) {
+    //if is counterterro
+    let selector = document.getElementById('select_gender');
+    let gender = selector.value;
+    if (gender == 'female') {
+      id = 'antiterro_female';
+    }
+    else
+    {
+      id = 'antiterro_male';
+    }
+  }
+  else
+  {
+    id = 'terro_male';
+  }
+  CreateCharacter(id);
+}
 
-  // adaugam un id pentru identificare individuala si stilizare
-  user_character.id = mapName;
-
-  user_character.classList.add('character');
-  
-  character.appendChild(user_character);
+function CreateCharacter(id)
+{
+  character.id = id;
 }

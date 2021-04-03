@@ -21,7 +21,6 @@ function CreateMap(mapName) {
   let text = document.createTextNode(mapName);
   // adaugam clasa maps pentru stilizare
   mymap.classList.add('maps');
-  mymap.classList.
 
   // adaugam textul in divul nostru copil
   mymap.appendChild(text);
@@ -64,7 +63,3 @@ function Maps() {
 setInterval(() => {
   Maps();
 }, 10);
-
-
-
-

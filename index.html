@@ -9,9 +9,11 @@
   <script src="user_age.js" defer></script>
   <script src="maps.js" defer></script>
   <script src="genderSelector.js" defer></script>
+  <script src="button_effect.js" defer></script>
+  <script src="generate_Character.js" defer></script>
   <title>Document</title>
 </head>
-<body >
+<body>
   <div class="background-image">
     <div id="clockposition">
         <p id="clock"></p>
@@ -71,35 +73,30 @@
           <label class="label">Select character`s gender:</label><br>
         </div>
         
-        <select name="gender" class="inputuri_design" 
-                id="select_gender" >
+        <select  name="gender" class="inputuri_design" id="select_gender" >
             <option id="male" value="male">Male</option>
             <option id="female" value="female">Female</option>
         </select><br><br>
         <!--onclick="this.disabled=true, GenerateCharacter()"-->
-        <button onclick="GenerateCharacter()" type="submit" id="button_submit"><b>Generate character</b></button>
+        <button id="button_submit" onclick="GenerateCharacter()"><b>Generate character</b></button>
       </form>
 
       <!-- Right panel -->
       <div class="chenare" id="chenar2">
         <div id="getmaps"></div>
-        
         <div id="about_character">
           <div id="info_character">
             <h2 id ="output"></h2>
             <h2 id ="output2"></h2>
             <h2 id ="output3"></h2>
           </div>
-          
-          <div id="character_image">
+          <div class="character" id="character_image">
             <!-- aici vine poza characterului -->
           </div>
         </div>
-        
-        
       </div>
-      
     </div>
   </div>
+  
 </body>
 </html>
