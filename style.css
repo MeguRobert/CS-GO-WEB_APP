@@ -133,8 +133,6 @@ input[type=text],  input[type=date], select[type=radio]{
     box-shadow: 5px 10px darkorange;
     background-size:cover;
     background-repeat: no-repeat;
-    
-    
 }
 #Cobblestone{
     background-image: url("../Resurse/cbblestone.jpg");
@@ -179,4 +177,25 @@ input[type=text],  input[type=date], select[type=radio]{
 #about_character{
     display:flex;
     border: 1px red solid;
+}
+
+/* Character's style */
+#antiterro_female{
+    background-image: url("../Resurse/antiterro_female.jpg");
+}
+#antiterro_male{
+    background-image: url("../Resurse/antiterro_male.jpg");
+}
+#terro_male{
+    background-image: url("../Resurse/terro_male.jpg");
+}
+
+.character{
+    width:20%;
+    height:25vh;
+    border: 1px rgb(255, 60, 0) solid;
+    padding: 5px;
+    box-shadow: 5px 10px darkorange;
+    background-size:cover;
+    background-repeat: no-repeat;
 }

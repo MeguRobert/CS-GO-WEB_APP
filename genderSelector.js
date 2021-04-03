@@ -1,8 +1,8 @@
-let teams = document.getElementsByName("teams");
-let genderSelector = document.getElementById("select_gender");
-let antiterroGender = `<option id = "male" value = "male">Male</option>
+var teams = document.getElementsByName("teams");
+var genderSelector = document.getElementById("select_gender");
+var antiterroGender = `<option id = "male" value = "male">Male</option>
                    <option id = "female" value = "female" > Female</option> `;
-let terroGender = `<option id = "male" value = "male">Male</option>`;
+var terroGender = `<option id = "male" value = "male">Male</option>`;
 function Gender()
 {
         if (teams[0].checked) {
