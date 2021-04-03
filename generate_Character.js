@@ -1,4 +1,4 @@
-GenerateCharacter()
+function GenerateCharacter()
 {
-  
+   
 }

@@ -180,3 +180,13 @@ input[type=text],  input[type=date], select[type=radio]{
     display:flex;
     border: 1px red solid;
 }
+
+.flash{
+    animation: blinker 1s linear;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
