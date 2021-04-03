@@ -20,11 +20,12 @@ function DisplayAge() {
 
 function ShowTime(zi, ore, min, sec) {
   
-  let text = "Ai trait pana acum: " + "<br>"
-    + "zile: " + zi + "<br>"
-    + "ore: " + ore + "<br>"
-    + "Min: " + min + "<br>"
-    + "secunde: " + sec + "<br>"
+  let text = "You have already lost this time "+"<br>"+"in your life playing video games: " + "<br><br>"
+    + "days: " + zi + "<br>"
+    + "hours: " + ore + "<br>"
+    + "minutes: " + min + "<br>"
+    + "seconds: " + sec + "<br><br>"
+    + "Now it`s time to make it real!"
     ;
   document.getElementById("output2").innerHTML = text;
 }

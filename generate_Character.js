@@ -18,9 +18,13 @@ function GenerateCharacter()
   }
   else
   {
-    id = 'terro_male';
+    if(teams[1].checked)
+    {
+      id = 'terro_male';
+    }
   }
-  CreateCharacter(id);
+  if(id != undefined)
+    CreateCharacter(id);
 }
 
 function CreateCharacter(id)
