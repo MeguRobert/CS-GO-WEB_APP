@@ -33,10 +33,6 @@ function withFemaleCT()
     }   
 }
 
-
-
-
-
 function GenerateCharacter(){
     console.log("POZA CARACTER");
 }
