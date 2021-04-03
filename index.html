@@ -8,7 +8,7 @@
   <script src="app.js" defer></script>
   <script src="user_age.js" defer></script>
   <script src="maps.js" defer></script>
-  <script src="teamGender.js" defer></script>
+  <script src="genderSelector.js" defer></script>
   <title>Document</title>
 </head>
 <body >
@@ -18,7 +18,7 @@
         <p id="clock"></p>
     </div> 
     <div class="my_container2">
-
+git status
       <form class="chenare" id="chenar1">
         
         <!-- Nickname -->
@@ -38,6 +38,30 @@
         <input class="inputuri_design" type="date" id="user_date_of_birth" >
 
 
+        <!-- Team selection - Radio -->
+        <div class="label_pic">
+          <img class="grenada" src="../Resurse/molotov.png">
+          <label class="label">Chose your team:</label>
+        </div>
+
+        <input type="radio" name="teams" value="antiterro" onchange="Gender()">
+        <label for="antiterro">Counter-Terrorist</label><br>
+        <input type="radio" name="teams" value="terro" onchange="Gender()">
+        <label for="terro">Terrorist</label>
+        <br><br>
+
+        <!-- Gender selector -->
+        <div class="label_pic">
+          <img class="grenada" src="../Resurse/molotov.png">
+          <label class="label">Select character`s gender:</label><br>
+        </div>
+        
+        <select name="gender" class="inputuri_design" 
+                id="select_gender" >
+            <option id="male" value="male">Male</option>
+            <option id="female" value="female">Female</option>
+        </select><br><br>
+
         <!-- Map selection -->
         <div class="label_pic">
           <img class="grenada" src="../Resurse/molotov.png">
@@ -56,6 +80,7 @@
         <label for="map5">Train</label><br>
         <input type="checkbox" id="allmap" name="map" value="map_all">
         <label for="allmap">All Maps</label><br><br>
+
 
 
         <!-- Team selection - Radio -->
@@ -83,6 +108,7 @@
         <br><br>
 
         <!--onclick="this.disabled=true, GenerateCharacter()"-->
+
         <button onclick="GenerateCharacter()" type="submit" id="button_submit"><b>Generate character</b></button>
       </form>
 
