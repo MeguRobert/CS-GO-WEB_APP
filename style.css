@@ -75,6 +75,7 @@ input[type=text],  input[type=date], select[type=radio]{
     font-family: 'Inconsolata', monospace;
     
 }
+
 .label{
     color:orange;
     /* text-shadow:2px 2px 0.5px orange; */
@@ -99,6 +100,10 @@ input[type=text],  input[type=date], select[type=radio]{
     top:10%;
     padding: 0.7rem;
     width: 60%;
+}
+.inputuri_design:after{
+    
+    font-family: 'Inconsolata', monospace;
 }
 .my_container2{
     display: flex;
@@ -169,4 +174,9 @@ input[type=text],  input[type=date], select[type=radio]{
 .grenada{
     width:20px;
     height:20px;
+}
+
+#about_character{
+    display:flex;
+    border: 1px red solid;
 }
