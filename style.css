@@ -212,3 +212,6 @@ input[type=text],  input[type=date], select[type=radio]{
     padding-top:2.5rem;
     font-size:2rem;
   }
+  #output2{
+    font-size: 1rem;
+  }
