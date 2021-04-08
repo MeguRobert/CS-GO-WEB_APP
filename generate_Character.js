@@ -29,7 +29,5 @@ function GenerateCharacter()
 
 function CreateCharacter(id)
 {
-
   character.id = id;
-  
 }

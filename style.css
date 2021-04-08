@@ -17,7 +17,7 @@ body,html{
     margin-left: 0;
     padding: 0;
     margin:0;
-    background-image: url("../Resurse/background.png");
+    background-image: url("Resurse/background.png");
     background-repeat: no-repeat;
    
     background-attachment: fixed; 
@@ -134,19 +134,19 @@ input[type=text],  input[type=date], select[type=radio]{
     background-repeat: no-repeat;
 }
 #Cobblestone{
-    background-image: url("../Resurse/cbblestone.jpg");
+    background-image: url("Resurse/cbblestone.jpg");
 }
 #Inferno{
-    background-image: url("../Resurse/inferno.jpg");
+    background-image: url("Resurse/inferno.jpg");
 }
 #Mirage{
-    background-image: url("../Resurse/mirage.jpg");
+    background-image: url("Resurse/mirage.jpg");
 }
 #Nuke{
-    background-image: url("../Resurse/nuke.jpg");
+    background-image: url("Resurse/nuke.jpg");
 }
 #Train{
-    background-image: url("../Resurse/train.jpg");
+    background-image: url("Resurse/train.jpg");
 }
 
 #getmaps{
@@ -181,13 +181,13 @@ input[type=text],  input[type=date], select[type=radio]{
 
 /* Character's style */
 #antiterro_female{
-    background-image: url("../Resurse/antiterro_female.png");
+    background-image: url("Resurse/antiterro_female.png");
 }
 #antiterro_male{
-    background-image: url("../Resurse/antiterro_male.png");
+    background-image: url("Resurse/antiterro_male.png");
 }
 #terro_male{
-    background-image: url("../Resurse/terro_male.png");
+    background-image: url("Resurse/terro_male.png");
 }
 
 .character{
